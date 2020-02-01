@@ -143,6 +143,11 @@ h3 {
   display: inline-block;
   transition: all .3s ease;
 }
+ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
 .boton:hover{
   background-color: #e33000;
 }
@@ -450,6 +455,46 @@ div.detalle-evento:nth-child(2) {
 div.detalle-evento p {
   margin-bottom: 20px;
   font-size: 20px;
+}
+/**Invitados**/
+
+ul.lista-invitados li{
+  padding: 10px;
+  float: left;
+}
+
+@media only screen and (min-width:480px) {
+  ul.lista-invitados li{
+    width: 50%;
+  }
+}
+@media only screen and (min-width:768px) {
+  ul.lista-invitados li{
+    width: 33.3%;
+  }
+}
+
+/*el div invitado debe estar como posicion relativa y el p como posicion absoluta para poder posicionar el parrafo como a nosotros nos guste*/
+div.invitado{
+  position: relative;
+  overflow: hidden;
+}
+div.invitado img {
+  max-width: 100%;
+}
+div.invitado p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px 10px;
+  margin: 0;/*por que tenia por default margins y no quedeba bien asi que se los sacamos :D */
+  /*vamos agregarle un filtro a las fotos así*/
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  text-align: left;
+  font-family: 'Oswald',sans-serif;
+  color: #fe4918;
+  text-transform: uppercase;
 }
 
 /*******************
