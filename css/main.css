@@ -149,6 +149,13 @@ h3 {
   background-color: white;
   color: #fe4918;
 }
+.boton.transparente{
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+.boton.transparente:hover{
+  border: 2px solid #fe4918;
+}
 
 ul{
   list-style: none;
@@ -569,6 +576,7 @@ p.numero{
   color:  #fe4918;
   font-size: 4em;
   display: block;
+  text-align: center;
   margin: 0 0 10px 0;
   font-family: 'Oswald',sans-serif;
 }
@@ -711,8 +719,54 @@ footer.info-testimonial cite span{
 }
 
 
-/****/
+/**newsltter**/
+div.newsletter{
+  position: relative;
+  height: auto;
+}
 
+div.newsletter::before{
+  background-image: url(../img/bg-newsletter.jpg);
+  content: '';/*NOTA:sin el content no se puede insertar la imagen ya que no se ha creado el elemento*/
+}
+
+div.newsletter .contenido{
+  padding: 100px 0;
+  color: #ffffff;
+  text-align:  center;
+  position: relative;
+}
+
+div.newsletter .contenido p{
+  font-size: 1.2em;
+  text-transform: lowercase;
+}
+
+div.newsletter .contenido h3{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-family: 'PT Sans',sans-serif;
+
+}
+
+
+
+/**Cuenta regresiva**/
+
+div.cuenta-regresiva ul li{
+  text-transform: uppercase;
+  font-family: 'Oswald',sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+  div.cuenta-regresiva ul li{
+    width: 25%;
+    float: left;
+  }
+}
 
 /*******************
 *****************
