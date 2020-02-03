@@ -713,7 +713,7 @@ footer.info-testimonial cite{
 }
 
 footer.info-testimonial cite span{
-  color: #000000;
+  color: #949494;
   display: block;/*para que ocupe todo el espacio y quede con salto de linea*/
   text-transform: none;/*para que no herede el upper case del parrafo*/
 }
